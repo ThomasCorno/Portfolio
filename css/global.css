@@ -1,0 +1,804 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  font-style: normal;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  width: 100%;
+}
+
+#invisible {
+  opacity: -1;
+  margin-bottom: 3.3%;
+  z-index: 0;
+}
+
+body {
+  width: 100%;
+  background-image: url(../images/monk.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+/*  background-image: hsla(14, 16%, 55%, 0.5);
+/*background-image: linear-gradient(0deg, lightgray, gray);*/
+/*background: linear-gradient(to right, darkgray 0%,rgba(222, 222, 222, .75) 12.5%,rgba(222, 222, 222, .75) 87.5%,darkgray 100%);
+*/}
+
+.Central {
+  width: 70vw;
+  margin: 2.5% auto 2.5%;
+  padding-top: 2%;
+  background-color: white;
+}
+
+main {
+  z-index: 1;
+  width: 100%;
+}
+
+.Normal_Text {
+  font-size: 1.25rem;
+}
+
+h1, h2, #Top_List2, footer > div > h3, #Top_List1 a, #Top_List2 a, #Portfolio a {
+  color : darkgreen;
+  font-weight: bold;
+}
+
+header {
+  width: 100%;
+}
+
+#Nav_Bar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  Background-color : RGB(230, 245, 220);
+  border-bottom: 0.2em solid darkgreen;
+  width: 100%;
+  height: auto;
+  display : inline-flex;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+#Top_List1 {
+  width : 50%;
+  justify-content: space-around;
+}
+
+.Top_List1_Item {
+  padding : 1% 2%;
+  display : inline-block;
+}
+
+#Dropdown_Phone_Image {
+  padding-left: 0.5%;
+}
+
+.Top_List2_Item {
+  padding : 3% 2% 0;
+  display : inline-block;
+}
+
+#Top_List2, .Footer_List {
+  list-style : none;
+  justify-content: space-around;
+}
+
+#Phone_Button {
+  cursor: pointer;
+  border: none;
+  Background-color : RGB(230, 245, 220);
+}
+
+#Dropdown_Phone_Number {
+  display: none;
+}
+
+#Dropdown_Phone_Image:hover #Dropdown_Phone_Number {
+  display: block;
+  padding: 0.625rem 0.9375rem;
+  float: right;
+}
+
+#linkedin, #github, #gmail, #telephone {
+  width: 2.5em;
+  height: 2.5em;
+}
+
+#linkedin:hover, #github:hover, #gmail:hover, #telephone:hover, #Top_List2 a {
+  border: 2% solid white;
+  border-radius: 10px;
+  margin: -2%;
+  transition: all 0.5s ease;
+}
+
+#Top_List2 {
+  font-size: 1.3rem;
+  width : 25%;
+}
+
+/********************************Download Button*******************************/
+
+#Download {
+  font-size: 1.3rem;
+  width: max-content;
+  padding: 1% 4%;
+  border: 2px solid darkgreen;
+  margin-bottom: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: RGB(230, 245, 220);
+}
+
+#Download:hover {
+  font-size: 1.4rem;
+  transition: all 0.2s ease;
+}
+
+/********************************Middle****************************************/
+
+#Job, .Block_Title, footer div h3  {
+  font-size : 1.875rem;
+}
+
+#Top_Big_Frame {
+  display: flex;
+}
+
+#Left_Frame1 {
+  margin-left: 3%;
+  width: 32.916vw;
+}
+
+#Photo {
+  width: 250px;
+  height: 250px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius : 50%;
+  border: 0.15em solid darkgray;
+}
+
+#Name {
+  text-align: center;
+  font-size: 2.2rem;
+}
+
+#Horizontal-bar {
+  width: 100%;
+}
+
+#Job {
+  text-align: center;
+}
+
+#Right_Frame1 {
+  margin : 0 3% 0;
+  padding: 0 0 0.6rem 1.2rem;
+  box-shadow: -0.25rem 0.3125rem rgba(112,105,112,0.30);
+  height: 50%;
+}
+
+.Arrow_Section{
+  width: 100%;
+  text-align: center;
+}
+
+.Down_Arrow {
+  animation: bounce 0.7s ease infinite alternate;
+  transition:all 4s ease;
+  height: 50px;
+}
+
+@keyframes bounce{
+    from {transform: translateY(0.3em);}
+    to   {transform: translateY(1.2em);}
+}
+
+#Mid_Big_Frame {
+  display: flex;
+  justify-content: space-around;
+  height: 35vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1%;
+}
+
+.Block {
+  background-color : RGB(230, 245, 220);
+  margin :  0 2.5rem;
+  width: 92.166vw;
+  height: 31vh;
+  box-shadow: -0.25rem 0.3125rem rgba(112,105,112,0.30);
+}
+
+
+.Block_Title {
+  /*width: 15.625rem;*/
+  padding : 0 0 0.625rem;
+  padding-left: 2%;
+}
+
+#Competences, #Informatique, #Qualites {
+  margin: 0.75rem;
+  padding : 0.8rem;
+}
+
+#Mid_Big_Frame div {
+  padding-left: 5%;
+}
+/*****************************Partie Portfolio*********************************/
+
+#Portfolio {
+  margin-top: 5%;
+  padding-bottom: 2%;
+}
+
+#Portfolio > h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 3%;
+  margin-bottom: 0;
+}
+
+#Answer_to_Life {
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#Greenline1 {
+  justify-content: center;
+  width: 65%;
+  margin-top: 2%;
+  margin-bottom: 4%;
+  height: 4px;
+  margin-left: 17.5%;
+}
+
+.Portfolio_Big_Div h3 {
+  font-size: 1.8rem;
+  padding: 2% 3%;
+  width: fit-content;
+  border: 2px solid darkgrey;
+  border-radius: 8px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Portfolio_Big_Div {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+.Left, .Right {
+  width: 40%;
+  border: 2px solid darkgreen;
+  border-radius: 10px;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 15px;
+}
+
+.Left {
+  margin: 2% 2.5% 2% 5%;
+}
+
+.Left:hover {
+  background-color: RGB(230, 245, 220);
+}
+
+.Right {
+  margin: 2% 5% 2% 2.5%;
+}
+
+.Right:hover {
+  background-color: RGB(230, 245, 220);
+}
+
+.Left img, .Right img {
+  width: 125px;
+  margin: 0 0 6% 0;
+}
+
+#Greenline2 {
+  justify-content: center;
+  width: 65%;
+  margin-top: 4%;
+  height: 4px;
+  margin-left: 17.5%;
+}
+
+/*Partie à afficher en mode portrait sur mobile*/
+#Bottom {
+  display: none;
+}
+/*Partie Footer*/
+footer {
+  width: 100%;
+  height : 9.375rem;
+  margin-bottom: 0;
+  background-color: RGB(230, 245, 220);
+  display: flex;
+  justify-content: space-around;
+}
+
+.Footer_Block {
+  width: auto;
+  margin-top: 1%;
+}
+
+footer h3 {
+  padding-left: 4%;
+}
+
+.Footer_List {
+  padding: 4% 4% 0 4%;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+footer img {
+  width: 3.5em;
+  padding: 0.2em;
+  margin: 2em 0;
+  border-radius: 50%;
+  border: 0.2em solid darkgreen;
+}
+
+
+/***************************************************************************************
+*************************mobile********************************************************/
+
+
+@media all and (orientation: portrait) {
+
+  * {
+    margin: auto;
+  }
+
+  .Central {
+    width: 100%;
+    margin: 0;
+    padding-top: 2%;
+  }
+
+  #Nav_Bar {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  #Top_List1 {
+    width: 100%;
+  }
+
+  #Dropdown_Phone_Image img:hover {
+    width: max-content;
+  }
+
+  #Top_List2 {
+    display: none;
+  }
+
+  .Top_List2_Item {
+    display: none;
+    width: 1vw;
+    padding: 3% 3%;
+  }
+
+  #Download {
+    margin-top: 10%;
+  }
+
+  #Dropdown_Phone_Image {
+    display: none;
+  }
+
+  body {
+    width:100%;
+  }
+
+  #Top_Big_Frame {
+    display: block;
+    width: auto;
+    margin: auto;
+  }
+
+  #Left_Frame1 {
+    width: auto;
+    margin:auto;
+  }
+
+  #Photo {
+    box-shadow: none;
+    width : 50%;
+    height: 50%;
+  }
+
+  #Name {
+    margin: 5% 5% 0 5%;
+    font-size: 2rem;
+  }
+
+  #Job {
+    margin: 2% 0 10% 0;
+    font-size: 1.7rem;
+  }
+
+  #Horizontal-bar {
+    width: 60%;
+    margin: 0 20%;
+  }
+
+  #Down_Arrow {
+    display: none;
+  }
+
+  #Right_Frame1 {
+    margin: 8%;
+  }
+
+  #Mid_Big_Frame {
+    width: 100%;
+    height: max-content;
+    flex-wrap: wrap;
+  }
+
+  #Mid_Big_Frame div {
+    height: max-content;
+    padding-left: auto;
+    padding-right: 0;
+    display: block;
+    height: 100%;
+    padding-left: 7%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  footer {
+    width: 100%;
+  }
+
+  .Footer_Block {
+    width: auto;
+    margin: 4% 4% 0 4%;
+  }
+
+  .Footer_List {
+    font-size: 1rem;
+  }
+
+  footer img {
+    display: none;
+  }
+
+}
+
+/***************************************************************************************
+************************tablette*******************************************************/
+@media all and (orientation: landscape) and (max-width: 1518px) {
+
+  .Central {
+    width: 100%;
+    margin: 0;
+    padding-top: 6%;
+  }
+
+  #Nav_Bar {
+    display: flex;
+  }
+
+  #Top_List1 {
+    width: 30%;
+    margin: 0;
+    display: flex;
+  }
+
+  #Top_List2 {
+    justify-content: space-around;
+    width: 35%;
+    display: flex;
+  }
+
+  .Top_List1_Item {
+    margin: 2% 0;
+    padding: 0;
+  }
+
+  .Top_List2_Item {
+    float: right;
+    font-size: 0.9em;
+    margin: 3% 0% 0%;
+    padding: 0;
+    justify-content: space-around;
+  }
+
+  #Top_Big_Frame {
+    display: flex;
+    margin-right: auto;
+    margin-top: 0;
+  }
+
+  #Left_Frame1 {
+    margin-left: 4%;
+    margin-right: auto;
+  }
+
+  #Photo {
+    width: 12em;
+    height: auto;
+  }
+
+  #Name {
+    font-size: 2rem;
+    margin: 0;
+  }
+
+  #Horizontal-bar {
+    width: 80%;
+    margin: 0 10%;
+  }
+
+  #Name {
+    font-size: 3vw;
+  }
+
+  #Job, .Block_Title, footer div h3 {
+    font-size: 2.6vw;
+  }
+
+
+  #Right_Frame1 {
+    margin-left: 4%;
+    margin-right: 4%;
+    margin: 5% 4% 0;
+  }
+
+  #Mid_Big_Frame {
+    height: max-content;
+    justify-content: space-between;
+    font-size: 0.8em;
+  }
+
+  #Mid_Big_Frame div {
+    height: 60vh;
+    width: 25vw;
+    justify-content: space-around;
+  }
+
+  #Mid_Big_Frame li{
+    font-size: 0.9em;
+  }
+
+  footer.block {
+    padding: 0;
+  }
+}
+
+@media all and (orientation: landscape) and (min-width: 760px) and (max-width: 879px)
+{
+
+  .Central {
+    width: 100%;
+    margin: 0;
+    padding-top: 2%;
+  }
+
+  #Nav_Bar {
+    display: flex;
+  }
+
+  #Top_List1 {
+    width: 30%;
+    margin: 0;
+    display: flex;
+  }
+
+  #Top_List2 {
+    justify-content: space-around;
+    width: 38%;
+    display: flex;
+  }
+  .Top_List1_Item {
+    margin: 2% 0;
+    padding: 0;
+  }
+
+  .Top_List2_Item {
+    float: right;
+    margin: 3% 0% 0%;
+    padding: 0;
+    justify-content: space-around;
+  }
+
+  #Download {
+    margin: 5% auto;
+  }
+
+  #Top_Big_Frame {
+    display: flex;
+    margin-right: auto;
+    margin-top: 0;
+  }
+
+  #Left_Frame1 {
+    margin-left: 4%;
+    margin-right: auto;
+  }
+
+  #Photo {
+    width: 12em;
+    height: auto;
+  }
+
+  #Name {
+    font-size: 2rem;
+    margin: 0;
+  }
+
+  #Job, .Block_Title, footer div h3 {
+    font-size: 2.6vw;
+  }
+
+  #Right_Frame1 {
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+
+  #Mid_Big_Frame {
+    height: max-content;
+    justify-content: space-between;
+    font-size: 0.8em;
+  }
+
+  #Mid_Big_Frame div {
+    height: 100%;
+    width: 25vw;
+    justify-content: space-around;
+  }
+
+  #Mid_Big_Frame li{
+    font-size: 0.9em;
+  }
+
+  footer.block {
+    padding: 0;
+  }
+}
+
+@media all and (orientation: landscape) and (min-width: 880px) and (max-width: 1024px)
+{
+
+  .Central {
+    width: 100%;
+    margin: 0;
+    padding-top: 4%;
+  }
+
+  #Nav_Bar {
+    display: flex;
+  }
+
+  #Top_List1 {
+    width: 30%;
+    margin: 0;
+    display: flex;
+  }
+
+  #Top_List2 {
+    justify-content: space-around;
+    width: 35%;
+    display: flex;
+  }
+  .Top_List1_Item {
+    margin: 2% 0;
+    padding: 0;
+  }
+
+  .Top_List2_Item {
+    float: right;
+    margin: 3% 0% 0%;
+    padding: 0;
+    justify-content: space-around;
+  }
+
+  #Top_Big_Frame {
+    display: flex;
+    margin-right: auto;
+    margin-top: 0;
+  }
+
+  #Left_Frame1 {
+    margin-left: 4%;
+    margin-right: auto;
+  }
+
+  #Photo {
+    width: 12em;
+    height: auto;
+  }
+
+  #Name {
+    font-size: 2rem;
+    margin: 0;
+  }
+
+  #Job, .Block_Title, footer div h3 {
+    font-size: 2.6vw;
+  }
+
+  #Right_Frame1 {
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+
+  #Mid_Big_Frame {
+    height: 45vh;
+    justify-content: space-between;
+    font-size: 0.8em;
+  }
+
+  #Mid_Big_Frame div {
+    height: 100%;
+    width: 25vw;
+    justify-content: space-around;
+  }
+
+  #Mid_Big_Frame li{
+    font-size: 0.9em;
+  }
+
+  footer.block {
+    padding: 0;
+  }
+}
+
+@media all and (orientation: landscape) and (min-width: 1025px) and (max-width: 1481px) {
+  #invisible {
+    margin-bottom: 4%;
+  }
+
+  .Central {
+    width: 100%;
+    margin: 0;
+    padding-top: 2%;
+  }
+
+  #Nav_Bar {
+    height: auto;
+  }
+
+  #Top_List2 {
+    width: 35%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .Top_List2_Item {
+    float: right;
+    margin: 3% 0% 0%;
+    padding: 0;
+  }
+
+  #Top_Big_Frame {
+    margin: 0;
+  }
+
+  #Mid_Big_Frame div {
+    height: 100%;
+  }
+
+    footer.block {
+      padding-left: 0;
+    }
+}
