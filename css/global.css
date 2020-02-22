@@ -200,8 +200,8 @@ header {
 }
 
 @keyframes bounce{
-    from {transform: translateY(0.3em);}
-    to   {transform: translateY(1.2em);}
+    from {transform: translateY(1.1em);}
+    to   {transform: translateY(1.7em);}
 }
 
 #Mid_Big_Frame {
