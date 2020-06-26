@@ -199,6 +199,10 @@ header {
   height: 50px;
 }
 
+#Down_Arrow2 {
+  margin-top: 150px;
+}
+
 @keyframes bounce{
     from {transform: translateY(1.1em);}
     to   {transform: translateY(1.7em);}
@@ -210,6 +214,7 @@ header {
   height: 35vh;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 2%;
   margin-bottom: 1%;
 }
 
@@ -217,7 +222,7 @@ header {
   background-color : RGB(230, 245, 220);
   margin :  0 2.5rem;
   width: 92.166vw;
-  height: 35vh;
+  height: 25vw;
   box-shadow: -0.25rem 0.3125rem rgba(112,105,112,0.30);
 }
 
@@ -239,7 +244,7 @@ header {
 /*****************************Partie Portfolio*********************************/
 
 #Portfolio {
-  margin-top: 5%;
+  margin-top: 0%;
   padding-bottom: 2%;
 }
 
@@ -440,7 +445,7 @@ footer img {
     margin: 0 20%;
   }
 
-  #Down_Arrow {
+  .Down_Arrow {
     display: none;
   }
 
@@ -571,13 +576,17 @@ footer img {
   }
 
   #Mid_Big_Frame div {
-    height: 60vh;
+    height: 97vh;
     width: 25vw;
     justify-content: space-around;
-  }
+  }/*70vw*/
 
   #Mid_Big_Frame li{
     font-size: 0.9em;
+  }
+
+  #Down_Arrow2 {
+    margin-top: 0;
   }
 
   footer.block {
@@ -662,13 +671,17 @@ footer img {
   }
 
   #Mid_Big_Frame div {
-    height: 100%;
+    height: 98vh;
     width: 25vw;
     justify-content: space-around;
   }
 
   #Mid_Big_Frame li{
     font-size: 0.9em;
+  }
+
+  #Down_Arrow2 {
+    margin-top: 0px;
   }
 
   footer.block {
@@ -801,4 +814,8 @@ footer img {
     footer.block {
       padding-left: 0;
     }
+}
+
+@media all and (max-height: 700px){
+
 }
