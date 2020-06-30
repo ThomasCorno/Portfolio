@@ -188,6 +188,10 @@ header {
   height: 50%;
 }
 
+#Right_Frame1 > ul {
+  margin-left: 1.2rem;
+}
+
 .Arrow_Section{
   width: 100%;
   text-align: center;
@@ -222,7 +226,7 @@ header {
   background-color : RGB(230, 245, 220);
   margin :  0 2.5rem;
   width: 92.166vw;
-  height: 25vw;
+  height: 26vw;
   box-shadow: -0.25rem 0.3125rem rgba(112,105,112,0.30);
 }
 
@@ -469,6 +473,15 @@ footer img {
     margin-left: 10%;
     margin-right: 10%;
   }
+  
+  .Portfolio_Big_Div {
+    display: block;
+  }
+
+  .Right, .Left {
+    width: 85%;
+    margin: 5% auto;
+  }
 
   footer {
     width: 100%;
@@ -493,105 +506,143 @@ footer img {
 ************************tablette*******************************************************/
 @media all and (orientation: landscape) and (max-width: 1518px) {
 
+  * {
+    margin: auto;
+  }
+
   .Central {
     width: 100%;
     margin: 0;
-    padding-top: 6%;
+    padding-top: 2%;
   }
 
   #Nav_Bar {
-    display: flex;
+    width: 100%;
+    height: auto;
+    display: block;
   }
 
   #Top_List1 {
-    width: 30%;
-    margin: 0;
-    display: flex;
+    width: 100%;
+  }
+
+  #Dropdown_Phone_Image img:hover {
+    width: max-content;
   }
 
   #Top_List2 {
-    justify-content: space-around;
-    width: 35%;
-    display: flex;
-  }
-
-  .Top_List1_Item {
-    margin: 2% 0;
-    padding: 0;
+    display: none;
   }
 
   .Top_List2_Item {
-    float: right;
-    font-size: 0.9em;
-    margin: 3% 0% 0%;
-    padding: 0;
-    justify-content: space-around;
+    display: none;
+    width: 1vw;
+    padding: 3% 3%;
+  }
+
+  #Download {
+    margin-top: 10%;
+  }
+
+  #Dropdown_Phone_Image {
+    display: none;
+  }
+
+  body {
+    width:100%;
   }
 
   #Top_Big_Frame {
-    display: flex;
-    margin-right: auto;
-    margin-top: 0;
+    display: block;
+    width: auto;
+    margin: auto;
   }
 
   #Left_Frame1 {
-    margin-left: 4%;
-    margin-right: auto;
+    float: left;
+    width: 40%;
+    margin: 0% 3% ;
+    box-shadow: 5px  5px lightgray;
   }
 
   #Photo {
-    width: 12em;
-    height: auto;
+    float: left;
+    box-shadow: none;
+    width : 50%;
+    height: 50%;
+    margin-left: 24%;
   }
 
   #Name {
+    float: right;
+    margin: 5% 7% 0 0%;
     font-size: 2rem;
-    margin: 0;
+    text-align: center;
   }
 
   #Horizontal-bar {
-    width: 80%;
-    margin: 0 10%;
+    display: none;
   }
 
-  #Name {
-    font-size: 3vw;
+  #Job {
+    float: right;
+    margin: 2% 0 10% 0%;
+    font-size: 1.7rem;
+    text-align: center;
   }
 
-  #Job, .Block_Title, footer div h3 {
-    font-size: 2.6vw;
+  @keyframes bounce{
+    from {transform: translateY(0.1em);}
+    to   {transform: translateY(0.7em);}
   }
-
-
-  #Right_Frame1 {
-    margin-left: 4%;
-    margin-right: 4%;
-    margin: 5% 4% 0;
-  }
-
-  #Mid_Big_Frame {
-    height: max-content;
-    justify-content: space-between;
-    font-size: 0.8em;
-  }
-
-  #Mid_Big_Frame div {
-    height: 97vh;
-    width: 25vw;
-    justify-content: space-around;
-  }/*70vw*/
-
-  #Mid_Big_Frame li{
-    font-size: 0.9em;
-  }
-
-  #Down_Arrow2 {
+  
+  #Down_Arrow1, #Down_Arrow2 {
     margin-top: 0;
   }
 
-  footer.block {
-    padding: 0;
+  #Right_Frame1 {
+    margin: 8% 8% 0 8%;
+    box-shadow: none;
   }
+
+  p.Normal_Text {
+    padding-top: 10%;
+  }
+
+  #Mid_Big_Frame {
+    width: 100%;
+    height: max-content;
+    flex-wrap: wrap;
+  }
+
+  #Mid_Big_Frame div {
+    height: max-content;
+    padding-left: auto;
+    padding-right: 0;
+    display: block;
+    height: 100%;
+    padding-left: 7%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  footer {
+    width: 100%;
+  }
+
+  .Footer_Block {
+    width: auto;
+    margin: 4% 4% 0 4%;
+  }
+
+  .Footer_List {
+    font-size: 1rem;
+  }
+
+  footer img {
+    display: none;
+  }
+
 }
 
 @media all and (orientation: landscape) and (min-width: 760px) and (max-width: 879px)
