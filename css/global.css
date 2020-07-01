@@ -21,9 +21,9 @@ html {
 
 body {
   width: 100%;
-  background-image: url(../images/grey2.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url(../images/grey-background.png);
+  background-repeat: repeat;
+  background-size: 75%;
 /*  background-image: hsla(14, 16%, 55%, 0.5);
 /*background-image: linear-gradient(0deg, lightgray, gray);*/
 /*background: linear-gradient(to right, darkgray 0%,rgba(222, 222, 222, .75) 12.5%,rgba(222, 222, 222, .75) 87.5%,darkgray 100%);
