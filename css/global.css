@@ -21,7 +21,7 @@ html {
 
 body {
   width: 100%;
-  background-image: url(../images/monk.jpg);
+  background-image: url(../images/grey2.png);
   background-repeat: no-repeat;
   background-size: cover;
 /*  background-image: hsla(14, 16%, 55%, 0.5);
@@ -204,7 +204,7 @@ header {
 }
 
 #Down_Arrow2 {
-  margin-top: 150px;
+  margin-top: 17%;
 }
 
 @keyframes bounce{
